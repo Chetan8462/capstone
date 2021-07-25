@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Capstone Project</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    </head>
+    <body>
+        <main id="content" role="main">
+          <div class="panel">
+            <h2 class="panel-head">click or drag file</h2>
+            <div class="panel-content">
+              <label for="image">
+                <form action="/getResponse" method="POST" enctype="multipart/form-data" id="my_form" class="image-select" data-droppable="">
+                  <input id="image" type="file" name="image" data-droppable-input=""/>
+                  <i class="fa fa-camera fa-2x image-select__icon"></i>
+                  <div class="image-select__message"></div>
+                  <div class="bg-image aspect-square" style="background-image: url('images/uploadimage.png');" data-droppable-image=""></div>
+                </form>
+              </label>
+            <button style="width:100%; padding: 8px; font-size: 16px;" onclick="document.getElementById('my_form').submit();">Submit</button>
+            </div>
+          </div>
+          
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
