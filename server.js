@@ -43,7 +43,7 @@ app.post('/getResponse',upload.single('image'),async (req,resp)=>{
          });
     }
 
-    axios.post('https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/79932071-d9ec-4b15-bcb4-fed8abb183c2/detect/iterations/Iteration3/url',{"url":'https://i.stack.imgur.com/X6jI3.png'},
+    axios.post('https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/79932071-d9ec-4b15-bcb4-fed8abb183c2/detect/iterations/Iteration4/url',{"url":'https://i.stack.imgur.com/X6jI3.png'},
     {headers:{'Prediction-Key':'9639493e007b461da7aa33ab262a1bda','Content-Type':'application/json'}}).then((ans)=>{
         console.log(ans.data.predictions);
         resp.send(ans.data.predictions);
