@@ -2,11 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:900,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
-body{
+/* body{
     display: flex; 
     justify-content: center; 
     align-items: center;
-}
+} */
 
 .bg-image {
   background-position: top center;
@@ -27,7 +27,7 @@ body{
   background: #f0f0f0;
   color: #454547;
   margin: 0 auto;
-  min-width: 250px;
+  min-width: 300px;
   width: 33.333%;
 }
 
