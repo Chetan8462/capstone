@@ -32,6 +32,12 @@ app.get('/',(req,resp)=>{
     resp.sendFile(__dirname+"/public/form.html");
 });
 
+app.get('/getResponse',(req,resp)=>{
+    // resp.send("hello");
+    // console.log(__dirname);
+    resp.sendFile(__dirname+"/public/formresults.html");
+});
+
 app.post('/getResponse',upload.single('image'),async (req,resp)=>{
     if(!req.file)
     {

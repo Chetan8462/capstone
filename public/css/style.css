@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto:900,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+@import "compass/css3";
 
 /* body{
     display: flex; 
@@ -140,4 +142,53 @@
   100% {
     transform: translateY(0);
   }
+}
+
+
+.rwd-table {
+  margin: 1em 0;
+  min-width: 400px;  
+}
+
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.rwd-table th {
+  display: none;    
+}
+
+.rwd-table  th, td {
+  text-align: left;
+}
+
+.rwd-table td {
+  display: block; 
+}
+
+.rwd-table th, td:before { 
+  font-weight: bold;
+  width: 6.5em; 
+  display: inline-block;
+
+}
+
+.rwd-table {
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.rwd-table tr {
+  border-color: lighten(#34495E, 10%);
+}
+
+.rwd-table th, .rwd-table td {
+  margin: .5em 1em;
+}
+
+.rwd-table th, .rwd-table td:before {
+  color: #dd5;
 }
